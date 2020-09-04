@@ -35,42 +35,21 @@ const counter = (function counter() {
   }
 })();
 
-let newObj = {
-    value: 0,
-    increment(n) {
-        value += n;
-    },
-    decrement(n) {
-        value -= n;
-    },
-    getValue() {
-        return value;
-    }
-};
-
+let numberOfOperations = new Number();
 function getFixedCounter(k) {
     if (typeof param == 'undefined') {
         let param = k;
         console.log(`param: ${param}`);
-        return k;
     }
-    
-    let numberOfOperations = new Number();
-    console.log(`numberOfOperations: ${numberOfOperations}`);
     switch(k) {
-        case '+': { newObj.increment(param); break;}
-        case '-': { newObj.decrement(param); break;}
-        case '?': { newObj.getValue(); break;}
+        case '+': { counter.changeBy(param); break;}
+        case '-': { counter.changeBy(-param); break;}
+        case '?': { return counter.getValue(); break;}
         default: {
             numberOfOperations = k;
-            console.log(`numberOfOperations: ${numberOfOperations}`);
         }
     }
-    console.log(newObj);
-    return 0;
-
-}
-function main() {
+}function main() {
   const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
 
   const val = parseInt(readLine().trim());
