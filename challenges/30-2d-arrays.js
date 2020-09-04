@@ -38,7 +38,7 @@ function main() {
   const y_start = y-(y-1);
   const y_end   = y-1;
 
-  let largestNumber = Number(0);
+  let largestNumber;
   let sum = Number(0);
   for (let i = x_start; i < x_end; i++) {
     for (let j = y_start; j < y_end; j++) {
@@ -52,8 +52,12 @@ function main() {
       sum += arr[i+1][j];
       sum += arr[i+1][j+1];
       console.log(`sum = ${sum}`);
-      if (sum > largestNumber) largestNumber = sum;
-      console.log(`largestNumber = ${largestNumber}`);
+      if (typeof largestNumber == 'undefined') {
+        largestNumber = sum;
+      } else if (sum > largestNumber) {
+          largestNumber = sum;
+      }
+  console.log(`largestNumber = ${largestNumber}`);
       console.log('------------')
     }
   }
