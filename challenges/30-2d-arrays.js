@@ -42,7 +42,7 @@ function main() {
   let sum = Number(0);
   for (let i = x_start; i < x_end; i++) {
     for (let j = y_start; j < y_end; j++) {
-      sum += arr[i-1][j-1];
+      sum = arr[i-1][j-1];
       sum += arr[i-1][j];
       sum += arr[i-1][j+1];
 
@@ -54,7 +54,6 @@ function main() {
       console.log(`sum = ${sum}`);
       if (sum > largestNumber) largestNumber = sum;
       console.log(`largestNumber = ${largestNumber}`);
-      sum = 0;
       console.log('------------')
     }
   }
