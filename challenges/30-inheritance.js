@@ -26,23 +26,44 @@ class Person {
     }
 }
 
-class Student extends Person {
-    /*	
-    *   Class Constructor
-    *   
-    *   @param firstName - A string denoting the Person's first name.
-    *   @param lastName - A string denoting the Person's last name.
-    *   @param id - An integer denoting the Person's ID number.
-    *   @param scores - An array of integers denoting the Person's test scores.
-    */
-    // Write your constructor here
+const grades = {
+  o: 'o',
+  e: 'e',
+  a: 'a',
+  p: 'p',
+  d: 'd',
+  t: 't'
+}
 
-    /*	
-    *   Method Name: calculate
-    *   @return A character denoting the grade.
-    */
-    // Write your method here
-    
+class Student extends Person {
+  /*	
+  *   Class Constructor
+  *   
+  *   @param firstName - A string denoting the Person's first name.
+  *   @param lastName - A string denoting the Person's last name.
+  *   @param id - An integer denoting the Person's ID number.
+  *   @param scores - An array of integers denoting the Person's test scores.
+  */
+  // Write your constructor here
+  constructor(firstName, lastName, id, scores) {
+    super(firstName, lastName, id);
+    this.scores = scores;
+    this.average = scores.reduce((score,acc)=>acc+=score, 0) / scores.length;
+  }
+
+  /*	
+   *   Method Name: calculate
+   *   @return A character denoting the grade.
+   */
+  // Write your method here
+  calculate() {
+    if (90 <= this.average && this.average <= 100) return grades.o;
+    if (80 <= this.average && this.average <  90 ) return grades.e;
+    if (70 <= this.average && this.average <  80 ) return grades.a;
+    if (55 <= this.average && this.average <  70 ) return grades.p;
+    if (40 <= this.average && this.average <  55 ) return grades.d;
+    if (                      this.average <  40 ) return grades.t;
+  }
 }
 
 function main() {
