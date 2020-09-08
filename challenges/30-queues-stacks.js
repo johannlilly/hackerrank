@@ -17,8 +17,26 @@ function readLine() {
     return input_stdin_array[input_currentline++];
 }
 
-function Solution(){
+function Solution() {
   //Write your code here
+  this.stack = [];
+  this.queue = [];
+  this.pushCharacter = (ch) => {
+    // console.log(`pushCharacter: ${ch}`);
+    this.stack = [...this.stack, ch];
+  }
+  this.enqueueCharacter = (ch) => {
+    // console.log(`enqueueCharacter: ${ch}`);
+    this.queue = [...this.stack, ch];
+  }
+  this.popCharacter = () => {
+    // console.log(`popCharacter: ${this.stack[this.stack.length - 1]}`);
+    return this.stack.pop();
+  }
+  this.dequeueCharacter = () => {
+    // console.log(`dequeueCharacter: ${this.queue[0]}`);
+    return this.queue.shift(); 
+  }
 }
 
 function main(){
