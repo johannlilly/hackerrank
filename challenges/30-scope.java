@@ -19,12 +19,12 @@ class Difference {
     int b = 1;
     for (int i: elements) {
         if (i <= a) {
-            a = elements[i];
+            a = i;
         }
     }
     for (int i: elements) {
         if (i >= b) {
-            b = elements[b];
+            b = i;
         }
     }
     maximumDifference = Math.abs(b - a);
