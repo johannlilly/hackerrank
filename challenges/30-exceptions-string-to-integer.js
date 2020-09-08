@@ -39,4 +39,10 @@ function readLine() {
 
 function main() {
     const S = readLine();
+    try {
+      S != Number(S) && err()
+      console.log(Number(S))        
+    } catch (e) {
+        console.log('Bad String')
+    }
 }
