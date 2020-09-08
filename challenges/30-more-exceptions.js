@@ -18,6 +18,16 @@ function readLine() {
 }
 
 //Write your code here
+class Calculator {
+  power(n, p) {
+    try {
+      if (n < 0 || p < 0) {throw 'negative'}
+      return n**p;
+    } catch(e) {
+      if (e == 'negative') {return 'n and p should be non-negative'; }
+    }
+  }
+}
 
 function main(){
     var myCalculator=new Calculator();
