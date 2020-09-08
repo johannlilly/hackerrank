@@ -23,8 +23,19 @@ function Node(data){
 function Solution(){
 
 	this.insert=function(head,data){
-          //complete this method
-    };
+    // complete this method
+    if (head === null) {
+        // console.log(`> ${JSON.stringify(new Node(data))}`);
+        return new Node(data);
+    } else if (head.next === null) {
+        head.next = new Node(data);
+        return head;
+    } else {
+        head.next = this.insert(head.next, data);
+        // console.log(`> ${JSON.stringify(head)}`);
+        return head;
+    }
+  };
 
 	this.display=function(head){
         var start=head;
