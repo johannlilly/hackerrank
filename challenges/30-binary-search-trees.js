@@ -44,16 +44,11 @@ c
 
         if (leftExists || rightExists) {
             depth++;
-            if (depth > height) {
-                height = depth;
-            }
+            if (depth > height) { height = depth; }
         }
-        if (leftExists) {
-            compareBranches(left.left, left.right, depth);
-        }
-        if (rightExists) {
-            compareBranches(right.left, right.right, depth);
-        }
+        
+        if (leftExists) { compareBranches(left.left, left.right, depth); }
+        if (rightExists) { compareBranches(right.left, right.right, depth); }
     }
 
     compareBranches(root.left, root.right, height);
