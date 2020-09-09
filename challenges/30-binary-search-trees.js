@@ -32,9 +32,36 @@ function BinarySearchTree() {
   };
   
   // Start of function getHeight
+  /**
+   * Troublesome input:
+c
+   */
   this.getHeight = function(root) {
+    let height = 0;
+    let compareBranches = (left, right, depth) => {
+        let leftExists = (typeof left !== 'undefined' && left != null);
+        let rightExists = (typeof right !== 'undefined' && right != null);
 
-      // Add your code here
+        if (leftExists || rightExists) {
+            depth++;
+            console.log(`------------------------------------------------`)
+            console.log(`Level | ${depth}`);
+            console.log(`Left  | ${leftExists ? '✅' : '❌'}`);
+            console.log(`Right | ${rightExists ? '✅' : '❌'}`);
+            if (depth > height) {
+                height = depth;
+            }
+        }
+        if (leftExists) {
+            compareBranches(left.left, left.right, depth);
+        }
+        if (rightExists) {
+            compareBranches(right.left, right.right, depth);
+        }
+    }
+
+    compareBranches(root.left, root.right, height);
+    return height;
 
   }; // End of function getHeight
 }; // End of function BinarySearchTree
