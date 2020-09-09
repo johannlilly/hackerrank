@@ -44,10 +44,6 @@ c
 
         if (leftExists || rightExists) {
             depth++;
-            console.log(`------------------------------------------------`)
-            console.log(`Level | ${depth}`);
-            console.log(`Left  | ${leftExists ? '✅' : '❌'}`);
-            console.log(`Right | ${rightExists ? '✅' : '❌'}`);
             if (depth > height) {
                 height = depth;
             }
