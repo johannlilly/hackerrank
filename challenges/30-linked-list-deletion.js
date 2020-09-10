@@ -22,9 +22,16 @@ function Node(data){
 }
 function Solution(){
 
-    this.removeDuplicates=function(head){
-      //Write your code here
+  this.removeDuplicates=function(head){
+    if (head != null && head.next !== null) {
+        if (head.data == head.next.data) {
+            head.next = head.next.next;
+            this.removeDuplicates(head);
+        }
+        this.removeDuplicates(head.next);
     }
+    return head;
+  }
 
 	this.insert=function(head,data){
         var p=new Node(data);
