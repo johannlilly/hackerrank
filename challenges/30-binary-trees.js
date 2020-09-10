@@ -49,6 +49,7 @@ function BinarySearchTree() {
           traverseLevel(node.right, level + 1, ++order);
         }
       }
+      
       traverseLevel(root, 0, 0);
       process.stdout.write(
         bfs
