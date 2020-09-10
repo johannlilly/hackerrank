@@ -34,8 +34,28 @@ function BinarySearchTree() {
     // Start of function levelOrder
     this.levelOrder = function(root) {
 
-        // Add your code here
-        // To print values separated by spaces use process.stdout.write(someValue + ' ')
+      // Add your code here
+      // To print values separated by spaces use process.stdout.write(someValue + ' ')
+      let bfs = new Array();
+      let traverseLevel = (node, level, order) => {
+        node.level = level;
+        node.order = order;
+        bfs.push([node.level, node.order, node.data]);
+
+        if (typeof node.left !== 'undefined' && node.left != null)  {
+          traverseLevel(node.left, level + 1, ++order);
+        }
+        if (typeof node.right !== 'undefined' && node.right != null) {
+          traverseLevel(node.right, level + 1, ++order);
+        }
+      }
+      traverseLevel(root, 0, 0);
+      process.stdout.write(
+        bfs
+          .sort()
+          .reduce((acc, v) => [...acc, v[2]], [])
+          .join(' ')
+      );
 
 	}; // End of function levelOrder
 }; // End of function BinarySearchTree
