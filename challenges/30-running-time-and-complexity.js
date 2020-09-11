@@ -10,11 +10,11 @@ function processData(input) {
     } else if (specialPrimes.includes(number)) {
       message = types.prime;
     } else {
-      let count = 0;
+      let maxDivisor = Math.pow(number,0.5);
       message = types.notPrime;
       if ((number+1) % 6 == 0 || (number-1) % 6 == 0) {
-        for (let i = 2; i <= Math.pow(number,0.5); i++) {
-          if (number % i == 0) {
+          for (let i = 2; i <= maxDivisor; i++) {
+            if (number % i == 0) {
             count++;
             break;
           }
