@@ -5,23 +5,23 @@ function processData(input) {
   const types = { prime: 'Prime', notPrime: 'Not prime' };
   let message;
   for (let number of input) {
-      if (specialPrimes.includes(number)) {
-          message = types.prime;
-      } else if (number == 1) {
-          message = types.notPrime;
-      } else {
-          let count = 0;
-          for (let i = 2; i < (number**0.5); i++) {
-              if (number % i == 0) {
-                  count++;
-                  break;
-              }
-          }
-          message = count == 0
-          ? types.prime
-          : types.notPrime; 
+    if (specialPrimes.includes(number)) {
+      message = types.prime;
+    } else if (number == 1) {
+      message = types.notPrime;
+    } else {
+      let count = 0;
+      for (let i = 2; i <= Math.pow(number,0.5); i++) {
+        if (number % i == 0) {
+          count++;
+          break;
+        }
       }
-      console.log(message);
+      message = count == 0
+      ? types.prime
+      : types.notPrime; 
+    }
+    console.log(message);
   }
 } 
 
