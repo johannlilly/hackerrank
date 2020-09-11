@@ -16,33 +16,36 @@ public class Solution {
     }
 
     static class TestDataEmptyArray {
-        public static int[] get_array() {
-            // complete this function
-        }
+      public static int[] get_array() {
+          int[] arr = {};
+          return arr;
+      }
     }
 
     static class TestDataUniqueValues {
-        public static int[] get_array() {
-            // complete this function
-        }
+      static int[] arr = {0,1,2,3};
+      public static int[] get_array() {
+          return arr;
+      }
 
-        public static int get_expected_result() {
-            // complete this function
-        }
+      public static int get_expected_result() {
+          return 0;
+      }
     }
 
     static class TestDataExactlyTwoDifferentMinimums {
-        public static int[] get_array() {
-            // complete this function
-        }
+      static int[] arr = {0,0,1};
+      public static int[] get_array() {
+          return arr;
+      }
 
-        public static int get_expected_result() {
-            // complete this function
-        }
+      public static int get_expected_result() {
+          return 0;
+      }
     }
 
     
-	public static void TestWithEmptyArray() {
+	  public static void TestWithEmptyArray() {
         try {
             int[] seq = TestDataEmptyArray.get_array();
             int result = minimum_index(seq);
