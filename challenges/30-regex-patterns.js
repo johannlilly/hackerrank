@@ -26,12 +26,17 @@ function readLine() {
 
 function main() {
     const N = parseInt(readLine(), 10);
-
+    let list = new Array();
     for (let NItr = 0; NItr < N; NItr++) {
         const firstNameEmailID = readLine().split(' ');
 
         const firstName = firstNameEmailID[0];
 
         const emailID = firstNameEmailID[1];
+
+        if (emailID.search(/(@gmail.com)/gi) != -1) {
+            list = [...list , firstName];
+        }
     }
+    list.sort().forEach(name => console.log(name));
 }
