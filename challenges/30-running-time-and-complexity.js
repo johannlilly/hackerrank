@@ -9,11 +9,12 @@ function processData(input) {
           message = types.prime;
       } else if (number == 1) {
           message = types.notPrime;
-      } else {;
+      } else {
           let count = 0;
-          for (let i = 2; i < number; i++) {
+          for (let i = 2; i < (number**0.5); i++) {
               if (number % i == 0) {
                   count++;
+                  break;
               }
           }
           message = count == 0
