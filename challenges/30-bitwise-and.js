@@ -27,11 +27,28 @@ function readLine() {
 function main() {
   const t = parseInt(readLine(), 10);
 
+  let values = [];
+
   for (let tItr = 0; tItr < t; tItr++) {
     const nk = readLine().split(' ');
 
     const n = parseInt(nk[0], 10);
 
     const k = parseInt(nk[1], 10);
+
+    let validIntegers = [];
+
+    for (let b = n, a = n-1; b>a, a>0; b--, a--) {
+      for (let i = a; i>0; i--) {
+        if ((i&b)<k) {
+          validIntegers.push(i&b);
+        }
+      }
+    }
+    values.push(validIntegers);
   }
+  values.forEach(value => {
+      console.log(value.sort((c,d)=>d-c)[0]);
+  });
 }
+
