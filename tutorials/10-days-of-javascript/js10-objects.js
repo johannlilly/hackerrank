@@ -26,7 +26,16 @@ function readLine() {
  * Complete the Rectangle function
  */
 function Rectangle(a, b) {
-    
+  let length = a;
+  let width = b;
+  let perimeter = 2 * (length + width);
+  let area = length * width;
+  return {
+      length,
+      width,
+      perimeter,
+      area
+  }
 }
 
 
