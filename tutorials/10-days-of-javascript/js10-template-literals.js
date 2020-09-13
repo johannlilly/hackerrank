@@ -32,7 +32,15 @@ function readLine() {
  * expressions: The tagged template literal's array of expression values (i.e., [area, perimeter]).
  */
 function sides(literals, ...expressions) {
-    
+  let area = expressions[0];
+  let perimeter = expressions[1];
+
+  let s1 = (perimeter + Math.pow((Math.pow(perimeter, 2) - (16 * area)), 0.5)) / 4;
+  let s2 = (perimeter - Math.pow((Math.pow(perimeter, 2) - (16 * area)), 0.5)) / 4;
+  
+  let s = [s1, s2].sort();
+
+  return s;
 }
 
 
