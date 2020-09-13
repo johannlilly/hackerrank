@@ -22,6 +22,19 @@ function readLine() {
     return inputString[currentLine++];
 }
 
+function getMaxLessThanK(n, k) {
+  let a = n - 1;
+  let b = n;
+  let max = 0;
+  for (b, a; b > a, a > 0; b--, a--) {
+      for (let j = a; j > 0; j--) {
+          if ((j&b) < k) {
+              if ((j&b) > max) { max = (j&b) };
+          }
+      }
+  }
+  return max;
+}
 
 function main() {
     const q = +(readLine());
