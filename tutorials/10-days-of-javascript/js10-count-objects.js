@@ -29,7 +29,13 @@ function readLine() {
  * objects: an array of objects with integer properties 'x' and 'y'
  */
 function getCount(objects) {
-    
+  let count = 0;
+  for (let object of objects) {
+    object.x == object.y
+    ? count++
+    : count;
+  }
+  return count;
 }
 
 
