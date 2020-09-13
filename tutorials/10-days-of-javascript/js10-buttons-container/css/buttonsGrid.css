@@ -1,0 +1,15 @@
+body {
+  width: 100%;
+}
+
+#btns {
+  box-sizing: border-box;
+  width: 75%;
+}
+
+#btns button {
+  width: 30%;
+  height: 48px;
+  font-size: 24px;
+  float: left;
+}
