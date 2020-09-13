@@ -28,6 +28,7 @@ function regexVar() {
      * It must match a string that starts with 'Mr.', 'Mrs.', 'Ms.', 'Dr.', or 'Er.', 
      * followed by one or more letters.
      */
+    let re = /\bMr\.|Mrs\.|Ms\.|Dr\.|Er\.+\b/gi;
     
     /*
      * Do not remove the return statement
