@@ -26,8 +26,25 @@ function readLine() {
 
 // Complete the sockMerchant function below.
 function sockMerchant(n, ar) {
+  let colors = n;
+  let socks = ars.sort();
+  let acc = new Object;
+  let pairs = 0;
 
+  // console.log(`colors: ${colors}`);
+  // console.log(socks);
 
+  for (let i = 0; i < socks.length; i++) {
+      Object.keys(acc).includes(String(socks[i]))
+      ? acc[socks[i]]++
+      : acc[socks[i]] = 1;
+  }
+
+  Object.keys(acc).forEach(sock => {
+      pairs += Math.floor(acc[sock] / 2);
+  });
+
+  return pairs;
 }
 
 function main() {
