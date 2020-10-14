@@ -1,70 +1,14 @@
-<testsuites name="jest tests" tests="5" failures="4" time="1.693">
-  <testsuite name="undefined" errors="0" failures="4" skipped="0" timestamp="2020-10-14T20:37:51" time="1.693" tests="5">
-    <testcase classname=" Testing for cycle length 1" name=" Testing for cycle length 1" time="0.065">
+<testsuites name="jest tests" tests="5" failures="0" time="2.04">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2020-10-14T21:03:19" time="2.04" tests="5">
+    <testcase classname=" Testing for cycle length 1" name=" Testing for cycle length 1" time="0.081">
     </testcase>
-    <testcase classname=" Testing for cycle length 2" name=" Testing for cycle length 2" time="0.027">
-      <failure>Error: expect(received).toBe(expected)
-
-Expected value to be (using ===):
-  1
-Received:
-  0
-    at testWithCycleLength (/Users/user/Documents/GitHub/hackerrank/challenges/react/react-cyclic-counter/src/App.test.js:26:19)
-    at Object.&lt;anonymous&gt; (/Users/user/Documents/GitHub/hackerrank/challenges/react/react-cyclic-counter/src/App.test.js:41:3)
-    at Object.asyncFn (/Users/user/Documents/GitHub/hackerrank/challenges/react/react-cyclic-counter/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at /Users/user/Documents/GitHub/hackerrank/challenges/react/react-cyclic-counter/node_modules/jest-jasmine2/build/queueRunner.js:38:12
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/user/Documents/GitHub/hackerrank/challenges/react/react-cyclic-counter/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at /Users/user/Documents/GitHub/hackerrank/challenges/react/react-cyclic-counter/node_modules/p-map/index.js:46:16
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+    <testcase classname=" Testing for cycle length 2" name=" Testing for cycle length 2" time="0.054">
     </testcase>
-    <testcase classname=" Testing for cycle length 3" name=" Testing for cycle length 3" time="0.032">
-      <failure>Error: expect(received).toBe(expected)
-
-Expected value to be (using ===):
-  1
-Received:
-  0
-    at testWithCycleLength (/Users/user/Documents/GitHub/hackerrank/challenges/react/react-cyclic-counter/src/App.test.js:26:19)
-    at Object.&lt;anonymous&gt; (/Users/user/Documents/GitHub/hackerrank/challenges/react/react-cyclic-counter/src/App.test.js:45:3)
-    at Object.asyncFn (/Users/user/Documents/GitHub/hackerrank/challenges/react/react-cyclic-counter/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at /Users/user/Documents/GitHub/hackerrank/challenges/react/react-cyclic-counter/node_modules/jest-jasmine2/build/queueRunner.js:38:12
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/user/Documents/GitHub/hackerrank/challenges/react/react-cyclic-counter/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at /Users/user/Documents/GitHub/hackerrank/challenges/react/react-cyclic-counter/node_modules/p-map/index.js:46:16
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+    <testcase classname=" Testing for cycle length 3" name=" Testing for cycle length 3" time="0.06">
     </testcase>
-    <testcase classname=" Testing for cycle length 7" name=" Testing for cycle length 7" time="0.027">
-      <failure>Error: expect(received).toBe(expected)
-
-Expected value to be (using ===):
-  1
-Received:
-  0
-    at testWithCycleLength (/Users/user/Documents/GitHub/hackerrank/challenges/react/react-cyclic-counter/src/App.test.js:26:19)
-    at Object.&lt;anonymous&gt; (/Users/user/Documents/GitHub/hackerrank/challenges/react/react-cyclic-counter/src/App.test.js:49:3)
-    at Object.asyncFn (/Users/user/Documents/GitHub/hackerrank/challenges/react/react-cyclic-counter/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at /Users/user/Documents/GitHub/hackerrank/challenges/react/react-cyclic-counter/node_modules/jest-jasmine2/build/queueRunner.js:38:12
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/user/Documents/GitHub/hackerrank/challenges/react/react-cyclic-counter/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at /Users/user/Documents/GitHub/hackerrank/challenges/react/react-cyclic-counter/node_modules/p-map/index.js:46:16
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+    <testcase classname=" Testing for cycle length 7" name=" Testing for cycle length 7" time="0.093">
     </testcase>
-    <testcase classname=" Testing for cycle length 31" name=" Testing for cycle length 31" time="0.026">
-      <failure>Error: expect(received).toBe(expected)
-
-Expected value to be (using ===):
-  1
-Received:
-  0
-    at testWithCycleLength (/Users/user/Documents/GitHub/hackerrank/challenges/react/react-cyclic-counter/src/App.test.js:26:19)
-    at Object.&lt;anonymous&gt; (/Users/user/Documents/GitHub/hackerrank/challenges/react/react-cyclic-counter/src/App.test.js:53:3)
-    at Object.asyncFn (/Users/user/Documents/GitHub/hackerrank/challenges/react/react-cyclic-counter/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at /Users/user/Documents/GitHub/hackerrank/challenges/react/react-cyclic-counter/node_modules/jest-jasmine2/build/queueRunner.js:38:12
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/user/Documents/GitHub/hackerrank/challenges/react/react-cyclic-counter/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at /Users/user/Documents/GitHub/hackerrank/challenges/react/react-cyclic-counter/node_modules/p-map/index.js:46:16
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+    <testcase classname=" Testing for cycle length 31" name=" Testing for cycle length 31" time="0.248">
     </testcase>
   </testsuite>
 </testsuites>
