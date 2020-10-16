@@ -1,55 +1,14 @@
-<testsuites name="jest tests" tests="5" failures="3" time="1.716">
-  <testsuite name="undefined" errors="0" failures="3" skipped="0" timestamp="2020-10-16T13:15:37" time="1.716" tests="5">
-    <testcase classname=" Initial UI renders correctly" name=" Initial UI renders correctly" time="0.121">
+<testsuites name="jest tests" tests="5" failures="0" time="1.782">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2020-10-16T14:05:05" time="1.782" tests="5">
+    <testcase classname=" Initial UI renders correctly" name=" Initial UI renders correctly" time="0.097">
     </testcase>
-    <testcase classname=" Test with existing translations" name=" Test with existing translations" time="0.008">
-      <failure>Error: expect(element).toHaveValue(gato)
-
-Expected the element to have value:
-  gato
-Received:
-
-    at /Users/user/Documents/GitHub/hackerrank/challenges/react/react-language-translator/src/App.test.js:56:24
-    at Map.forEach (&lt;anonymous&gt;)
-    at Object.&lt;anonymous&gt; (/Users/user/Documents/GitHub/hackerrank/challenges/react/react-language-translator/src/App.test.js:54:16)
-    at Object.asyncFn (/Users/user/Documents/GitHub/hackerrank/challenges/react/react-language-translator/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at /Users/user/Documents/GitHub/hackerrank/challenges/react/react-language-translator/node_modules/jest-jasmine2/build/queueRunner.js:38:12
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/user/Documents/GitHub/hackerrank/challenges/react/react-language-translator/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at /Users/user/Documents/GitHub/hackerrank/challenges/react/react-language-translator/node_modules/p-map/index.js:46:16
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+    <testcase classname=" Test with existing translations" name=" Test with existing translations" time="0.018">
     </testcase>
-    <testcase classname=" Test with non-existing translations" name=" Test with non-existing translations" time="0.009">
+    <testcase classname=" Test with non-existing translations" name=" Test with non-existing translations" time="0.008">
     </testcase>
-    <testcase classname=" Test with existing translation followed by non-existing translations" name=" Test with existing translation followed by non-existing translations" time="0.004">
-      <failure>Error: expect(element).toHaveValue(gato)
-
-Expected the element to have value:
-  gato
-Received:
-
-    at Object.&lt;anonymous&gt; (/Users/user/Documents/GitHub/hackerrank/challenges/react/react-language-translator/src/App.test.js:82:22)
-    at Object.asyncFn (/Users/user/Documents/GitHub/hackerrank/challenges/react/react-language-translator/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at /Users/user/Documents/GitHub/hackerrank/challenges/react/react-language-translator/node_modules/jest-jasmine2/build/queueRunner.js:38:12
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/user/Documents/GitHub/hackerrank/challenges/react/react-language-translator/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at /Users/user/Documents/GitHub/hackerrank/challenges/react/react-language-translator/node_modules/p-map/index.js:46:16
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+    <testcase classname=" Test with existing translation followed by non-existing translations" name=" Test with existing translation followed by non-existing translations" time="0.005">
     </testcase>
-    <testcase classname=" Test with non-existing translation followed by existing translations" name=" Test with non-existing translation followed by existing translations" time="0.004">
-      <failure>Error: expect(element).toHaveValue(gato)
-
-Expected the element to have value:
-  gato
-Received:
-
-    at Object.&lt;anonymous&gt; (/Users/user/Documents/GitHub/hackerrank/challenges/react/react-language-translator/src/App.test.js:101:22)
-    at Object.asyncFn (/Users/user/Documents/GitHub/hackerrank/challenges/react/react-language-translator/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at /Users/user/Documents/GitHub/hackerrank/challenges/react/react-language-translator/node_modules/jest-jasmine2/build/queueRunner.js:38:12
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/Users/user/Documents/GitHub/hackerrank/challenges/react/react-language-translator/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at /Users/user/Documents/GitHub/hackerrank/challenges/react/react-language-translator/node_modules/p-map/index.js:46:16
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)</failure>
+    <testcase classname=" Test with non-existing translation followed by existing translations" name=" Test with non-existing translation followed by existing translations" time="0.005">
     </testcase>
   </testsuite>
 </testsuites>
