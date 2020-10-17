@@ -1,49 +1,10 @@
-<testsuites name="jest tests" tests="3" failures="3" time="16.772">
-  <testsuite name="undefined" errors="0" failures="3" skipped="0" timestamp="2020-10-16T14:10:55" time="16.772" tests="3">
-    <testcase classname=" Renders the correct number of page buttons" name=" Renders the correct number of page buttons" time="4.845">
-      <failure>Error: expect(received).toHaveLength(length)
-
-Expected value to have length:
-  6
-Received:
-  [&lt;button data-testid=&quot;page-button&quot;&gt;1&lt;/button&gt;, &lt;button data-testid=&quot;page-button&quot;&gt;2&lt;/button&gt;]
-received.length:
-  2
-    at /Users/user/Documents/GitHub/hackerrank/challenges/react/react-paginated-articles/src/App.test.js:36:25
-    at runExpectation (/Users/user/Documents/GitHub/hackerrank/challenges/react/react-paginated-articles/node_modules/wait-for-expect/lib/index.js:49:25)
-    at Timeout.callback [as _onTimeout] (/Users/user/Documents/GitHub/hackerrank/challenges/react/react-paginated-articles/node_modules/jsdom/lib/jsdom/browser/Window.js:523:19)
-    at listOnTimeout (internal/timers.js:549:17)
-    at processTimers (internal/timers.js:492:7)</failure>
+<testsuites name="jest tests" tests="3" failures="0" time="1.915">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2020-10-17T01:43:15" time="1.915" tests="3">
+    <testcase classname=" Renders the correct number of page buttons" name=" Renders the correct number of page buttons" time="0.107">
     </testcase>
-    <testcase classname=" Renders articles correctly on app did mount" name=" Renders articles correctly on app did mount" time="4.783">
-      <failure>Error: expect(element).toHaveTextContent()
-
-Expected element to have text content:
-  example title 1
-Received:
-  Example title 1
-    at /Users/user/Documents/GitHub/hackerrank/challenges/react/react-paginated-articles/src/App.test.js:65:22
-    at Array.forEach (&lt;anonymous&gt;)
-    at /Users/user/Documents/GitHub/hackerrank/challenges/react/react-paginated-articles/src/App.test.js:64:13
-    at runExpectation (/Users/user/Documents/GitHub/hackerrank/challenges/react/react-paginated-articles/node_modules/wait-for-expect/lib/index.js:49:25)
-    at Timeout.callback [as _onTimeout] (/Users/user/Documents/GitHub/hackerrank/challenges/react/react-paginated-articles/node_modules/jsdom/lib/jsdom/browser/Window.js:523:19)
-    at listOnTimeout (internal/timers.js:549:17)
-    at processTimers (internal/timers.js:492:7)</failure>
+    <testcase classname=" Renders articles correctly on app did mount" name=" Renders articles correctly on app did mount" time="0.011">
     </testcase>
-    <testcase classname=" Renders articles correctly after page button click" name=" Renders articles correctly after page button click" time="4.81">
-      <failure>Error: expect(received).toHaveLength(length)
-
-Expected value to have length:
-  4
-Received:
-  [&lt;li data-testid=&quot;result-row&quot;&gt;Example title 1&lt;/li&gt;, &lt;li data-testid=&quot;result-row&quot;&gt;Example title 2&lt;/li&gt;, &lt;li data-testid=&quot;result-row&quot;&gt;Example title 3&lt;/li&gt;]
-received.length:
-  3
-    at /Users/user/Documents/GitHub/hackerrank/challenges/react/react-paginated-articles/src/App.test.js:109:21
-    at runExpectation (/Users/user/Documents/GitHub/hackerrank/challenges/react/react-paginated-articles/node_modules/wait-for-expect/lib/index.js:49:25)
-    at Timeout.callback [as _onTimeout] (/Users/user/Documents/GitHub/hackerrank/challenges/react/react-paginated-articles/node_modules/jsdom/lib/jsdom/browser/Window.js:523:19)
-    at listOnTimeout (internal/timers.js:549:17)
-    at processTimers (internal/timers.js:492:7)</failure>
+    <testcase classname=" Renders articles correctly after page button click" name=" Renders articles correctly after page button click" time="0.019">
     </testcase>
   </testsuite>
 </testsuites>
