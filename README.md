@@ -1,4 +1,4 @@
-# hackerrank
+# My solutions to HackerRank challenges and tutorials
 
 - [prime numbers](./challenges/30-running-time-and-complexity.js)
 - [binary search tree - BFS](./challenges/30-binary-trees.js)
