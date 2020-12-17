@@ -6,4 +6,4 @@
 - [linked list](./challenges/30-linked-list.js)
 - [linked list deletion](./challenges/30-linked-list-deletion.js)
 
-**Disclaimer**: It is not my intention to distribute solutions to HackerRank challenges, but to demonstrate my coding proficiencies. Please follow the intention of the platform in solving challenges yourself.
+**Disclaimer**: It is not my intention to distribute solutions to HackerRank challenges, but to demonstrate my coding proficiencies and track my progress. Please follow the intention of the platform in solving challenges yourself.
