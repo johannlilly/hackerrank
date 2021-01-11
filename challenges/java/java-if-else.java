@@ -29,10 +29,8 @@ public class Solution {
     scanner.close();
 
     System.out.println(
-      n % 2 == 0
-      ? (2 <= n && n <= 5) || (20 < n)
-        ? "Not Weird"
-        : "Weird"
+      (n % 2 == 0) && ((2 <= n && n <= 5) || (20 < n))
+      ? "Not Weird"
       : "Weird"
     );
   }
