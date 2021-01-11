@@ -28,6 +28,6 @@ public class Solution {
     scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
     scanner.close();
 
-    System.out.println((n%2==0) && ((1<n && n<6) || (20<n)) ? "Not Weird" : "Weird");
+    System.out.println(n%2!=0||(5<n&&n<21)?"Weird":"Not Weird");
   }
 }
