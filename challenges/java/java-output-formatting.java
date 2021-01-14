@@ -20,15 +20,10 @@ public class Solution {
     {
       String s1=sc.next();
       int x=sc.nextInt();
-      String s2 = "";
-      if (x < 1) { s2 = "000"; }
-      else if (x < 10) { s2 = "00" + x; }
-      else if (x < 100) { s2 = "0" + x; }
-      else { s2 = "" + x; }
       System.out.println(
         s1
         + new String(new char[15 - s1.length()]).replace("\0", " ")
-        + s2
+        + String.format("%03d", x)
       );
     }
     System.out.println("================================");
