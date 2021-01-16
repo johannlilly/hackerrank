@@ -1,0 +1,28 @@
+/**
+ * Practice > Java > Introduction > Java Loops I
+ * 
+ * In this challenge, we're going to use loops to help us do some simple math.
+ * 
+ * Given an integer, N, print its first 10 multiples.
+ * Each multiple N x i (where 1 <= i <= 10) should be printed on a new line in the form: N x i = result.
+ * 
+ * Version: Java 8
+ */
+
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+
+public class Solution {
+  private static final Scanner scanner = new Scanner(System.in);
+  public static void main(String[] args) {
+    int N = scanner.nextInt();
+    scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+    scanner.close();
+  }
+}
