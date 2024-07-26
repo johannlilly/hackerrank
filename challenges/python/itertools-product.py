@@ -1,23 +1,10 @@
-# Prepare > Python > Itertool > sitertools.product()
+# Prepare > Python > Itertools > itertools.product()
 # hackerrank.com/challenges/itertools-product
 
-coordinate1 = []
-coordinate2 = []
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from itertools import product
 
-for var in list(map(int, input().split(" "))):
-    coordinate1.append(var)
+A = list(map(int, input().split()))
+B = list(map(int, input().split()))
 
-for var in list(map(int, input().split(" "))):
-    coordinate2.append(var)
-
-def product(A, B):
-    cartesian = []
-    
-    for x in A:
-        for y in B:
-            cartesian.append((x, y))
-
-    return cartesian
-
-for tup in product(coordinate1, coordinate2):
-    print(tup, end=" ")
+print(*product(A, B))
