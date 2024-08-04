@@ -32,10 +32,8 @@ def hourglassSum(arr):
             g = arr[y+2][x+2]
             
             sums.append(a+b+c+d+e+f+g)
-
-    sums.sort()
     
-    return(sums[-1])
+    return(max(sums))
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
