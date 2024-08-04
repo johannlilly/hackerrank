@@ -22,17 +22,17 @@ import sys
 #
 
 def matchingStrings(stringList, queries):
-    queryCounter = []
+    # Write your code here
+    queryCounter = {}
 
     for query in queries:
-        counter = 0
-        for string in stringList:
-            if query == string:
-                counter += 1
+        queryCounter[query] = 0
 
-        queryCounter.append(counter)
+    for string in stringList:
+        if string in queryCounter:
+            queryCounter[string] += 1
 
-    return queryCounter
+    return [queryCounter[query] for query in queries]
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
