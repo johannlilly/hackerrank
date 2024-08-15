@@ -46,19 +46,20 @@ def print_singly_linked_list(node, sep, fptr):
 #
 #
 
-def compare_lists(llist1, llist2):
-    # Compare lengths
-    while llist1 and llist2:
-        # Compare values
-        if llist1.data != llist2.data:
-            return 0
-        
-        llist1, llist2 = llist1.next, llist2.next
-        
-    if llist1 or llist2:
+def compare_lists(llist1, llist2):        
+    # Compare values
+    if llist1.data != llist2.data:
         return 0
     
-    return 1
+    # Compare next node
+    if llist1.next is not None and llist2.next is not None:
+        if llist1.next.data != llist2.next.data:
+            return 0
+        else:
+            compare_lists(llist1.next, llist2.next)
+            return 1
+    else:
+        return 0
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
